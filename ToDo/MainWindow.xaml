@@ -6,6 +6,21 @@
         xmlns:local="clr-namespace:ToDo"
         mc:Ignorable="d"
         Title="ToDo" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="AddButton" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Margin" Value="10,5"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style x:Key="TextBoxFont" TargetType="TextBox">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="AcceptsReturn" Value="True"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="200"/>
@@ -17,14 +32,19 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
-            <!--任务组-->
+            <!--任务列表-->
             <ListBox Grid.Row="0" Margin="10" Background="#FFEEEEEE">
-                <ListBoxItem Content="任务组1" />
-                <ListBoxItem Content="任务组2" />
-                <ListBoxItem Content="任务组3" />
+                <ListBoxItem Content="任务列表1" />
+                <ListBoxItem Content="任务列表2" />
+                <ListBoxItem Content="任务列表3" />
             </ListBox>
-            <!--任务组操作区-->
-            <Button Grid.Row="1" Content="添加事项" Margin="10,5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Height="30"/>
+            <!--任务列表操作区-->
+            <Button Grid.Row="1"  Width="180" Height="30" Style="{StaticResource AddButton}">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                    <Image Source="pack://application:,,,/Images/add.png" Width="20" Height="20" Margin="0,0,5,0"/>
+                    <TextBlock Text="新建列表" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
         </Grid>
 
         <!--右侧内容-->
@@ -40,7 +60,7 @@
                 <ListBoxItem Content="任务3" />
             </ListBox>
             <!--任务操作区-->
-            <TextBox Grid.Row="1" Margin="10" AcceptsReturn="True" TextWrapping="Wrap"/>
+            <TextBox Grid.Row="1" Margin="10,5" Style="{StaticResource TextBoxFont}"/>
         </Grid>
     </Grid>
 </Window>
