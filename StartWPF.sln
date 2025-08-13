@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36327.8 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartWPF", "StartWPF\StartWPF.csproj", "{227E336C-9C82-4672-8736-0657A7B665D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionCatch", "ExceptionCatch\ExceptionCatch.csproj", "{A746FEFE-36EF-495C-A617-9E91DEA09C64}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{227E336C-9C82-4672-8736-0657A7B665D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{227E336C-9C82-4672-8736-0657A7B665D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{227E336C-9C82-4672-8736-0657A7B665D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A746FEFE-36EF-495C-A617-9E91DEA09C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A746FEFE-36EF-495C-A617-9E91DEA09C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A746FEFE-36EF-495C-A617-9E91DEA09C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A746FEFE-36EF-495C-A617-9E91DEA09C64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
