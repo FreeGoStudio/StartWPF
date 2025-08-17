@@ -60,7 +60,10 @@
                 <ListBoxItem Content="任务3" />
             </ListBox>
             <!--任务操作区-->
-            <TextBox Grid.Row="1" Margin="10,5" Style="{StaticResource TextBoxFont}"/>
+            <TextBox Grid.Row="1"
+                     Margin="10,5"
+                     Style="{StaticResource TextBoxFont}"
+                     PreviewKeyDown="TaskTextBox_PreviewKeyDown"/>
         </Grid>
     </Grid>
 </Window>
